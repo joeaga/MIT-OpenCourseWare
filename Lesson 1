@@ -1,0 +1,12 @@
+# naming the variables
+pi = 3.14159
+radius = 2.2
+# area of circle equation
+area = pi*(radius**2)
+print (area)
+# change value of radius; rename variable
+radius = radius + 1
+print (area)
+# area doesn't change; reiterate command
+area = pi*(radius**2)
+print (area)
