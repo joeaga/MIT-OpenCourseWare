@@ -1,0 +1,25 @@
+# example STRINGS 
+x = "Time's running out"
+name = "Mike"
+# using the '+' operon to combine strings doesn't include spaces.
+warning = x + " " + name
+print(warning)
+echo = x + (" " + name)*3
+print(echo)
+
+# example OUTPUT
+b = 27
+print(b)
+print(b*3)
+# when you sign a variable as a string (even if it is a number), the '*' operon will treat the number as a string and repeat.
+b_str = str(b)
+print(b_str)
+print(b_str*3)
+
+# example INPUT
+numprompt = input("What's you're favourite number? ") #note: adding the space makes it look cleaner on the console.
+print (5 * numprompt) 
+# input() always returns a string, so for arithmatic you want to assign the string as an int.
+numprompt = int(numprompt)
+print (5 * numprompt)
+
