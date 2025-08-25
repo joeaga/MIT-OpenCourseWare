@@ -65,5 +65,33 @@ while True: # while loops, loop the indented code beneath until it is broken by 
     else:
         n = input("You stay still. Try again: ")
 
+# example FOR LOOPS
+mysum = 0
+for i in range(10): # 'for' is a loop statement and 'i' is the loop variable
+   mysum += i # shorthand for mysum = mysum + i 
+print(mysum)
 
+mysum = 0
+for i in range(7, 10): # range between 7 and 10.
+   mysum += i
+print(mysum)
 
+mysum = 0
+for i in range(5, 11, 2): # range between 5 and 11, with step 2.
+   mysum += i
+print(mysum)
+
+# example PERFECT SQUARES
+ans = 0
+neg_flag = False 
+x = int(input("Enter an integer: ")) # assigns string as an int so it is treated as a number for arithmetic
+if x < 0:
+   neg_flag = True
+while ans**2 < x:
+   ans = ans + 1 # this loop runs integers 0, 1, 2, 3... **2 with a step +1 to see if the inputed integer is a perfect square.
+if ans**2 == x:
+   print("Square root of", x, "is", ans)
+else:
+   print(x, "is not a perfect square")
+   if neg_flag:
+       print("Just checking... did you mean", -x, "?")
