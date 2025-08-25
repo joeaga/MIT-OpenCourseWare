@@ -23,3 +23,47 @@ print (5 * numprompt)
 numprompt = int(numprompt)
 print (5 * numprompt)
 
+# example CONDITIONALS/ BRANCHING
+x = float(input("Enter a value for x: "))
+y = float(input("Enter a value for y: "))
+# note the identation, this organises the flow of order the code is read in. E.g: if the first 'if' is false it skips the rest of the indented code underneath.
+if x == y:
+   print("x and y are equal")
+   if y != 0: #ensures nothing is x/0 because this crashes python
+       print("therefore, x / y is", x/y) #thus, this will always print 1.0
+elif x < y: #elif means else if
+   print("x is smaller than y")
+elif x > y:
+   print("x is bigger than y")
+print("thanks!")
+
+# example REMAINDER
+# '%' is the modulus operon which gives the remainder of a division.
+prompt = int(input("Enter a number: "))
+if num % 2 == 0:
+   print("number is even")
+else: 
+   print("number is odd")
+
+# example WHILE LOOPS
+# indentation incredibly important for this mini-game to control the order of flow.
+count = 0   
+n = input("You are in the Lost Forest\n****************\n****************\n :)\n****************\n****************\nGo left or right? ")
+while True: # while loops, loop the indented code beneath until it is broken by speicifc requirements.
+    if n == "left" or n == "Left":
+        print("\nYou got out of the Lost Forest!\n\\o/")
+        break 
+    elif n == "right" or n == "Right":
+        count += 1
+        if count <= 5:
+            input("You are in the Lost Forest\n****************\n*************\n :( \n****************\n****************\nGo left or right? ")
+        if count >= 5:
+            input("You are in the Lost Forest\n****************\n****************\n >:( \n****************\n****************\nGo left or right? ")
+        if count >= 10:
+            print("You are stuck the Lost Forest\n****************\n****************\n (╯°□°）╯︵ ┻━┻ \n****************\n****************\nGame Over")
+            break    
+    else:
+        n = input("You stay still. Try again: ")
+
+
+
